@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  mail2telegram:
+    image: Mail2Telegram
+    build: .
+    env_file:
+      - Mail2Telegram.env
+    ports:
+      - 8025:8025
