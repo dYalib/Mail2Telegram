@@ -2,7 +2,7 @@ version: '2.1'
 
 services:
   mail2telegram:
-    image: Mail2Telegram
+    image: mail2telegram
     build: .
     env_file:
       - Mail2Telegram.env
