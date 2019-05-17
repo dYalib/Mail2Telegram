@@ -24,8 +24,6 @@ async def amain(loop):
     controller = Controller(ExampleHandler(),hostname='', port=os.environ.get("SMTP_PORT"))
     controller.start()
 
-print("hallo")
-print("var: " + str(os.environ.get("SMTP_PORT")))
 loop = asyncio.get_event_loop()
 loop.create_task(amain(loop=loop))
 try:
